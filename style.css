@@ -1,5 +1,8 @@
 body {
     background: silver;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -7,57 +10,77 @@ h1 {
     color: white;
     text-align: center;
     text-shadow: 2px 2px rosybrown;
-    box-sizing: border-box;
     border-bottom: 3px solid lavenderblush;
     margin: 10px 5px;
 }
 
 .container {
-    height: 500px;
+    max-height: 500px;
     width: 350px;
-    box-sizing: border-box;
     border: 3px solid rosybrown;
     border-radius: 10px;
     background: lightpink;
     box-shadow: 5px 5px 12px -7px #000000;
+    color: rosybrown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px 5px;
     margin: auto;
+    display: grid;
+    grid-gap: 5px 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:1fr minmax(75px, auto) repeat(5, 1fr);
 }
 
-.viewpoint {
+.output {
     box-sizing: border-box;
-    margin: 0px 5px 10px 5px;
+    margin: 0px 0px 10px 0px;
     border: 3px solid rosybrown;
     background: cadetblue;
-    height: 75px;
-    /* delete later */
+    max-width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.current, .previous {
+    max-width: 100%;
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20pt;
     font-weight: bold;
     letter-spacing: 5px;
-    text-align: right;
+    flex-wrap: wrap;
 }
 
-.grid {
-    height: 345px;
-    color: rosybrown;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
-    font-weight: bold;
-    margin: 0px 5px 5px 5px;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5,1fr);
-   
+.previous {
+    font-size: 10pt;
 }
+
+.ac, .del {
+    text-transform: uppercase;
+}
+
 
 .item {
+    max-height: 75px;
     background: lavenderblush;
     border-radius: 5px;
     display: flex;
     justify-content:center;
 	align-items: center;
+}
+
+h1 {
+    grid-column: 1/5;
+}
+
+.output {
+    grid-column: 1/5;
 }
 
 .ac {

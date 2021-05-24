@@ -5,32 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Title here</title>
+        <title>CSS calculator</title>
     </head>
 <body>
     <div class="container">
         <h1>Css calculator</h1>
-        <div class="viewpoint"><p>1234</p></div>
-        <div class="grid">
-            <div class="item ac"><p>ac</p></div>
-            <div class="item del"><p>del</p></div>
-            <div class="item divide"><p>/</p></div>
-            <div class="item one"><p>1</p></div>
-            <div class="item two"><p>2</p></div>
-            <div class="item three"><p>3</p></div>
-            <div class="item mult"><p>*</p></div>
-            <div class="item four"><p>4</p></div>
-            <div class="item five"><p>5</p></div>
-            <div class="item six"><p>6</p></div>
-            <div class="item plus"><p>+</p></div>
-            <div class="item seven"><p>7</p></div>
-            <div class="item eight"><p>8</p></div>
-            <div class="item nine"><p>9</p></div>           
-            <div class="item minus"><p>-</p></div>
-            <div class="item dot"><p>.</p></div>
-            <div class="item zero"><p>0</p></div>
-            <div class="item equal"><p>=</p></div>
+        <div class="output">
+            <div data-previuos-operand class="previous"></div>
+            <div data-current-operand class="current"></div>
         </div>
+            <div data-all-clear class="item ac">ac</div>
+            <div data-delete class="item del">del</div>
+            <div data-operation class="item divide">/</div>
+            <div data-number class="item one">1</div>
+            <div data-number class="item two">2</div>
+            <div data-number class="item three">3</div>
+            <div data-operation  class="item mult">*</div>
+            <div data-number class="item four">4</div>
+            <div data-number class="item five">5</div>
+            <div data-number class="item six">6</div>
+            <div data-operation class="item plus">+</div>
+            <div data-number class="item seven">7</div>
+            <div data-number class="item eight">8</div>
+            <div data-number class="item nine">9</div>
+            <div data-operation class="item minus">-</div>
+            <div data-number class="item dot">.</div>
+            <div data-number class="item zero">0</div>
+            <div data-equals class="item equal">=</div>
     </div>
+<script src="script.js"></script>
 </body>
 </html>
